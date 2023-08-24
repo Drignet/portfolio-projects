@@ -83,12 +83,13 @@ header input:hover{
 
 main{
   display: grid;
+  justify-content: center;
   grid-template-columns: repeat(2, 1fr);
   gap: 3em;
   margin-block: 2em;
   padding-inline: 2em;
   padding-block: 1em;
-  width: 80%;
+  max-width: 80%;
 }
 
 main img{
