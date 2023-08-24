@@ -1,6 +1,6 @@
 const main = document.querySelector('main');
 const search = document.querySelector('#search');
-const images = ["web", "mob", "gra"];
+const images = ["graphic-fly", "graphic-food", "graphic-look","graphic-mask", "graphic-me", "graphic-zip","mobile-agric", "mobile-day", "mobile-koko","website-fred", "website-love", "website-think", "website-yoga"];
 
 const all = document.querySelector("#all");
 const website = document.querySelector("#website");
@@ -29,7 +29,7 @@ images.forEach(image => {
   
   website.addEventListener("click", () => {
   main.innerHTML = "";
-  let webImages = images.filter(image => image.includes("web"));
+  let webImages = images.filter(image => image.includes("website"));
   webImages.forEach(webImage => {
     const img = document.createElement('img');
     img.src = `/src/public/images/${webImage}.png`;
@@ -41,7 +41,7 @@ images.forEach(image => {
 
 mobile.addEventListener("click", () => {
   main.innerHTML = "";
-  let mobImages = images.filter(image => image.includes("mob"));
+  let mobImages = images.filter(image => image.includes("mobile"));
   mobImages.forEach(mobImage => {
     const img = document.createElement('img');
     img.src = `/src/public/images/${mobImage}.png`;
@@ -53,7 +53,7 @@ mobile.addEventListener("click", () => {
 
 graphic.addEventListener("click", () => {
   main.innerHTML = "";
-  let graImages = images.filter(image => image.includes("gra"));
+  let graImages = images.filter(image => image.includes("graphic"));
   graImages.forEach(graImage => {
     const img = document.createElement('img'); 
     img.src = `/src/public/images/${graImage}.png`;
