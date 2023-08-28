@@ -13,7 +13,7 @@ taskBtn.addEventListener("click", () => {
     document.querySelector('.pop-error').style.display = "none";
   }
   items.push(input)
-  uncompletedTask.innerHTML += `<div class="tasks-input"><p><span class="thumbup"><img src="/images/good.svg" alt="thumbup icon" width="20"></span>${input}</p><div class="delete-done-div"><span class="delete"><img src="/images/delete.svg" alt="delete icon" width="20"></span><span class="done"><img src="/images/done.svg" alt="done icon" width="20"></span></div></div>`
+  uncompletedTask.innerHTML += `<div class="tasks-input"><p><span class="thumbup"><img src="images/good.svg" alt="thumbup icon" width="20"></span>${input}</p><div class="delete-done-div"><span class="delete"><img src="images/delete.svg" alt="delete icon" width="20"></span><span class="done"><img src="images/done.svg" alt="done icon" width="20"></span></div></div>`
   document.querySelector('#reset').reset();
 
 
