@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/style.css">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="wrapper-task">
+      <header class="header-task">
+        <h1> My Tasks For Today</h1>
+      </header>
+      <div class="uncompleted-task"></div>
+      <p class="pop-error">Please input your task</p>
+      <form id="reset" class="input-with-image">
+        <input type="text" id="my-task" name="mytask" placeholder="Your Task Here..." required>
+        <img src="/images/send.svg" alt="Image" id="task-button">
+      </form>
+      <div class="empty">
+        <img src="/images/empty.svg" alt="empty icon" width="50">
+      </div>
+    </div>
+	<script src="/task.js"></script>
+  </body>
+</html>
