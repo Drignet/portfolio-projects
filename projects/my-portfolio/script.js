@@ -20,10 +20,10 @@ let currentImage = 0;
 nextBtn.addEventListener('click', () => {
   
   currentImage = (currentImage + 1) % images.length
-  console.log(imageProject.src = `http://localhost:8158/public/images/${images[currentImage]}.png`)
+  console.log(imageProject.src = `images/${images[currentImage]}.png`)
 })
 prevBtn.addEventListener('click', () => {
   
   currentImage = (currentImage - 1 + images.length) % images.length
-  console.log(imageProject.src = `http://localhost:8158/public/images/${images[currentImage]}.png`)
+  console.log(imageProject.src = `images/${images[currentImage]}.png`)
 })
