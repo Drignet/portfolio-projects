@@ -10,7 +10,7 @@ const graphic = document.querySelector("#graphic");
 let img;
 images.forEach(image => {
   img = document.createElement('img');
-  img.src = `src/public/images/${image}.png`;
+  img.src = `images/${image}.png`;
   img.width = "150";
   img.style.boxShadow = "rgba(0, 0, 0, 0.35) 0px 5px 15px";
   main.appendChild(img)
@@ -20,7 +20,7 @@ images.forEach(image => {
     main.innerHTML = ""
     images.forEach(image => {
   img = document.createElement('img');
-  img.src = `src/public/images/${image}.png`;
+  img.src = `images/${image}.png`;
   img.width = "150";
   img.style.boxShadow = "rgba(0, 0, 0, 0.35) 0px 5px 15px";
   main.appendChild(img)
@@ -32,7 +32,7 @@ images.forEach(image => {
   let webImages = images.filter(image => image.includes("website"));
   webImages.forEach(webImage => {
     const img = document.createElement('img');
-    img.src = `src/public/images/${webImage}.png`;
+    img.src = `images/${webImage}.png`;
     img.width = "150";
     img.style.boxShadow = "rgba(0, 0, 0, 0.35) 0px 5px 15px";
     main.appendChild(img);
@@ -44,7 +44,7 @@ mobile.addEventListener("click", () => {
   let mobImages = images.filter(image => image.includes("mobile"));
   mobImages.forEach(mobImage => {
     const img = document.createElement('img');
-    img.src = `src/public/images/${mobImage}.png`;
+    img.src = `images/${mobImage}.png`;
     img.width = "150";
     img.style.boxShadow = "rgba(0, 0, 0, 0.35) 0px 5px 15px";
     main.appendChild(img);
@@ -56,7 +56,7 @@ graphic.addEventListener("click", () => {
   let graImages = images.filter(image => image.includes("graphic"));
   graImages.forEach(graImage => {
     const img = document.createElement('img'); 
-    img.src = `src/public/images/${graImage}.png`;
+    img.src = `images/${graImage}.png`;
     img.width = "150";
     img.style.boxShadow = "rgba(0, 0, 0, 0.35) 0px 5px 15px";
     main.appendChild(img);
@@ -69,7 +69,7 @@ search.addEventListener("keyup", () => {
   let searchImages = images.filter(image => image.match(searchValue));
   searchImages.forEach(searchImage => {
     const img = document.createElement('img'); 
-    img.src = `src/public/images/${searchImage}.png`;
+    img.src = `images/${searchImage}.png`;
     img.width = "150";
     img.style.boxShadow = "rgba(0, 0, 0, 0.35) 0px 5px 15px";
     main.appendChild(img);
